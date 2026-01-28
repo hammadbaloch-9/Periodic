@@ -1,0 +1,96 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* BODY */
+body {
+    background: #020e2a; /* dark navy */
+    color: #e5e7eb;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+     margin: 30px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+/* TABLE */
+.periodic-table {
+    border-collapse: separate;
+    border-spacing: 6px;
+    margin: auto;
+}
+
+/* ELEMENT CELL */
+.element {
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(145deg, #1e293b, #020617);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+   
+}
+
+/* SYMBOL */
+.element b {
+    font-size: 16px;
+    color: #38bdf8;
+}
+
+/* NAME */
+.element sup {
+    font-size: 9px;
+    opacity: 0.8;
+}
+
+/* HOVER EFFECT */
+.element:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(56,189,248,0.4);
+    background: linear-gradient(145deg, #020617, #1e293b);
+}
+
+/* EMPTY CELLS */
+.empty {
+    border: none;
+    background: transparent;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .element {
+        width: 55px;
+        height: 55px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: auto;
+    }
+
+    .periodic-table {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 480px) {
+    .periodic-table {
+        transform: scale(0.75);
+    }
+}
