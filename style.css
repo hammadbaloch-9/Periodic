@@ -17,13 +17,24 @@ body {
 
 /* TITLE */
 .title {
+    background: linear-gradient(145deg, #1e293b, #020617);
+    border: 2px solid #38bdf8;
+    border-radius: 30px;
+    width: 400px;
+    height: 90px;
+    align-content: center;
     text-align: center;
     margin-bottom: 20px;
+    margin-left: 32%;
     font-size: 28px;
     color: #38bdf8;
     letter-spacing: 1px;
 }
-
+.title:hover{
+    transform:translateY(-6px) scale(1.12);
+     box-shadow: 0 12px 25px rgba(56,189,248,0.4);
+    background: linear-gradient(145deg, #020617, #1e293b);
+}
 /* TABLE */
 .periodic-table {
     border-collapse: separate;
